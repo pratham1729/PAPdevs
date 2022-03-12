@@ -116,7 +116,7 @@ async def all(ctx):
     embed.add_field(name = '_killgame', value = 'Terminates TicTacToe game', inline = False)
     embed.add_field(name = '_Truth_or_Dare', value = 'Displays either a truth question or a dare', inline = False)
     embed.add_field(name = '_task_completed', value = 'Displays your task completion status', inline = False)
-    embed.add_field(name = '_task_incompleted', value = 'Displays your task incompletion status', inline = False)
+    embed.add_field(name = '_task_incomplete', value = 'Displays your task incompletion status', inline = False)
 
     
     await ctx.send(embed = embed)
