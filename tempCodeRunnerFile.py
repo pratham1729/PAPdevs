@@ -1,0 +1,1 @@
+embed.add_field(name = '_clear', value = 'Clears the chat upto a number provided', inline = False)
