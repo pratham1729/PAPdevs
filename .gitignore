@@ -126,6 +126,7 @@ venv.bak/
 dmypy.json
 config.json
 token.txt
+mongodb.txt
 
 # Pyre type checker
 .pyre/

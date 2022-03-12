@@ -3,11 +3,11 @@ from discord.ext import commands
 import os
 import pymongo
 
+Mongo=open("mongodb.txt","r").readline()
+TOKEN = open("token.txt", "r").readline()
 
 
-
-
-clientmongo = pymongo.MongoClient("mongodb+srv://pratham1729:fazR7URJuvdXtKH@cluster0.jc0rc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+clientmongo = pymongo.MongoClient(Mongo)
 db = clientmongo.test
 
 intents = discord.Intents().all()
@@ -114,4 +114,4 @@ async def info(ctx):
 
 
 
-client.run("")
+client.run(TOKEN)

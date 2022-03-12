@@ -5,8 +5,8 @@ from discord.ext import commands
 from discord_components import *
 from asyncio import sleep as s
 import pymongo
-
-clientmongo = pymongo.MongoClient("mongodb+srv://pratham1729:fazR7URJuvdXtKH@cluster0.jc0rc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+Mongo=open("mongodb.txt","r").readline()
+clientmongo = pymongo.MongoClient(Mongo)
 db = clientmongo.test
 
 

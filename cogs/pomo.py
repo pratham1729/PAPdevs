@@ -2,10 +2,8 @@ import discord
 from discord.ext import commands
 import asyncio
 import io
-import pymongo
 
-clientmongo = pymongo.MongoClient("mongodb+srv://pratham1729:fazR7URJuvdXtKH@cluster0.jc0rc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-db = clientmongo.test
+
 
 
 class cog5(commands.Cog):
