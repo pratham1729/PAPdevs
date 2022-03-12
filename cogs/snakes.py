@@ -14,7 +14,11 @@ ladder={7:26,16:39,13:55,40:78,44:76,47:68,49:91,61:96}
 class cog6(commands.Cog):
     def __init__(self,client):
         self.client=client
-
+    @commands.command()
+    async def killsnl(self,ctx):
+        global gameOver
+        gameOver=False
+        await ctx.send(f"{ctx.message.author.mention} ended the game")
     @commands.command()
     async def snl(self,ctx,plr1:discord.Member,plr2:discord.Member):
         global player1
