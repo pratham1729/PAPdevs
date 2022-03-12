@@ -18,4 +18,4 @@ async def PAPbot(ctx):
 
        
         
-client.run('OTUxNDI4NzEyMDY5NDcyMjc3.YinVCQ.ErzMNl7XppzZkimKf215TXKGRXs')
+client.run('')
