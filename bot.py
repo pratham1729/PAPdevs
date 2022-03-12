@@ -84,6 +84,7 @@ async def all(ctx):
     embed.add_field(name = '_add_deadline', value = 'Adds a Deadline', inline = False)
     embed.add_field(name = '_snl', value = 'Initiates the snake & ladder game', inline = False)
     embed.add_field(name = '_move', value = 'Moves players position on the SNL board', inline = False)
+    embed.add_field(name = '_killsnl', value = 'Terminates Snakes and Ladders game', inline = False)
     embed.add_field(name = '_tictactoe', value = 'Initiates TicTacToe game', inline = False)
     embed.add_field(name = '_killgame', value = 'Terminates TicTacToe game', inline = False)
     embed.add_field(name = '_Truth_or_Dare', value = 'Displays either a truth question or a dare', inline = False)
