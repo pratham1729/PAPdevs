@@ -2,7 +2,6 @@ import discord
 import random
 import json
 from discord.ext import commands
-from discord_components import *
 from asyncio import sleep as s
 import pymongo
 Mongo=open("mongodb.txt","r").readline()
