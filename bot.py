@@ -114,4 +114,4 @@ async def info(ctx):
 
 
 
-client.run("OTM3MzE2Mzg4MzU4NDU5NDAz.YfZ96Q.5tpsWCsBT_ZegMahF2kBv0mR0qo")
+client.run("")
