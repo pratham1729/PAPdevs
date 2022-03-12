@@ -2,6 +2,13 @@
 ## **By PAPDevs**
 A discord bot written in *python*
 ## **Features of our Bot**
+### CGPA Management Feature
+This bot has a feature which can keep a track of your CGPA. You can calculate your CGPA, you can get to know how far you are from your target CGPA and how much SGPA you will need for your target.
+How to use this feature?
+For CGPA calculation: Use the "cgpacalc" command
+For CGPA Display: Use the "showgpa" command
+for CGPA update: Use the "updategpa" command
+for CGPA target requirements: Use the "target" command
 ### Pomodoro Timer Feature
 What is Pomodoro Timer?
 The Pomodoro Technique is a time management system that encourages people to work with the time they have—rather than against it. Using this method, you break your workday into work chunks separated by breaks. These intervals are referred to as pomodoros.
@@ -51,5 +58,14 @@ For initializing game: use 'tictactoe' command
 For terminating game: use 'killgame' command
 
 For inputting place on board: use 'place' (number) command
+
+***Snakes and Ladders***
+
+For initializing game: use 'snl' command
+
+For terminating game: use 'killsnl' command
+
+For inputting place on board: use 'move' command
+
 
 
