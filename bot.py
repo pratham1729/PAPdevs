@@ -45,36 +45,9 @@ for filename in os.listdir("./cogs"):
         
 
 
-
-
-@client.command()
-async def clear(ctx,amount=5):
-    await ctx.channel.purge(limit=amount+1) #as it will count our .clear as one command
-
-@client.command()
-async def kick(ctx, member: discord.Member, *, reason=None):
-    await member.kick(reason=reason)
-    await ctx.send(f'User {member} has kicked.')
-
-@client.command()
-async def ban(ctx,member: discord.Member, *, reason=None):
-    await member.ban(reason=reason)
-
 @client.command()
 async def hello(ctx,text="Say something dumbass"):
     await ctx.send(text)
-
-@client.command()
-async def unban(ctx,* ,member):
-    banned_users=await ctx.guild.bans()
-    member_name,member_discriminator=member.split("#")
-
-    for banned_entry in banned_users:
-        user=banned_entry.user
-        if(user.name,user.discriminator)==(member_name,member_discriminator):
-            await ctx.guild.unban(user)
-            await ctx.send(f"Unbanned {user.mention}")
-            return
 
 
 @client.command(pass_context = True)
@@ -92,7 +65,6 @@ async def all(ctx):
     embed = discord.Embed(
     colour = discord.Colour.red())
     embed.set_author(name = 'All commands of PAPBot')
-    embed.add_field(name = '_clear', value = 'Clears the chat messages upto a number provided', inline = False)
     embed.add_field(name = '_hello', value = 'Says hello to the tagged member', inline = False)
     embed.add_field(name = '_cgpacalc', value = 'Calculates your CGPA (pass Grade Score,Grade Score)', inline = False)
     embed.add_field(name = '_showgpa', value = 'Returns your CGPA', inline = False)
