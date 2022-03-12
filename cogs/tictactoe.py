@@ -39,7 +39,7 @@ class cog3(commands.Cog):
     @commands.command()
     async def killgame(self,ctx):
         global gameOver
-        gameOver=False
+        gameOver=True
         await ctx.send(f"{ctx.message.author.mention} ended the game")
     @commands.command()
     async def tictactoe(self,ctx,p1:discord.Member,p2:discord.Member):
