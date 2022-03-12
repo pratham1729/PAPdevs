@@ -81,7 +81,6 @@ async def all(ctx):
     embed.add_field(name = '_ball', value = 'Random game', inline = False)
     embed.add_field(name = '_PAPbot', value = 'With love PAP', inline = False)
     embed.add_field(name = '_poll', value = 'Helps create poll', inline = False)
-    embed.add_field(name = '_add_deadline', value = 'Adds a Deadline', inline = False)
     embed.add_field(name = '_snl', value = 'Initiates the snake & ladder game', inline = False)
     embed.add_field(name = '_move', value = 'Moves players position on the SNL board', inline = False)
     embed.add_field(name = '_killsnl', value = 'Terminates Snakes and Ladders game', inline = False)
